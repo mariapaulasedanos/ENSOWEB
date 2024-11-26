@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Outfit:wght@200&family=Vina+Sans&display=swap');/*
+font-family: "Outfit", serif;
+font-family: "Vina Sans", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    font-family: "Outfit", serif;
+
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin:0 auto;
+}
+
+.header {
+    background-image: url(./imagenes/PORTADA\ 2.1.JPG);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-family: "vina sans", sans-serif;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+
+.submenu:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.538);
+    padding: 20px;
+    min-width: 400px;
+    
+
+}
+
+.submenu-productos {
+    display: none;
+}
+
+.submenu-productos {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.603);
+    border: 1px solid rgba(0, 0, 0, 0.603);;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 150px;
+    z-index: 1500;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.menu-productos:hover .submenu-productos {
+    display: block;
+}
+
+/* Estilos para los enlaces del submenú */
+.submenu-productos > a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+
+/* Estilos para las subcategorías */
+.submenu-productos ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.submenu-productos ul li {
+    margin-bottom: 5px;
+}
+
+.submenu-productos ul li a {
+    display: block;
+    padding: 5px 10px;
+    color: #666;
+    text-decoration: none;
+}
+
+/* Efecto hover en los elementos */
+.submenu-productos > a:hover,
+.submenu-productos ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+table {
+width: 100%;
+}
+
+th, td {
+    color: #ffffff;
+}
+
+.borrar{
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fffefe;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100hv;
+    text-align: center;
+
+}
+
+.header-img {
+    width: 300px;
+    height: auto;
+
+}
+
+.header-txt {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 90px;
+    text-transform: uppercase;
+    line-height: 1;
+    color: #ffffff;
+    font-family:"Oswald", sans-serif;  
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 25px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: backgroung-color 0.3s ease;
+
+}
+
+.btn-1:hover {
+    background-color: gray;
+}
+
+
+
+.ofert {
+    padding: 20px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ofert-1 {
+    display: flex;
+    align-items: center;
+    flex-basis: calc(33.3%- 15px);
+    background-color: rgb(239, 239, 239);
+    padding: 35px;
+
+}
+
+.ofert-img {
+    flex-basis: 50%;
+    margin-right: 15px;
+
+}
+
+.ofert-img img {
+    width: 250px;
+}
+
+.ofert-txt {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.ofert-txt h3 {
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+}
+
+.btn-2 {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: rgb(196, 194, 194);
+    color: black;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: backgroung-color 0.3s ease;
+
+}
+
+.btn-2:hover {
+    background-color: gray;
+}
+
+
+.products{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products h2{
+    color: black;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.product-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    
+}
+
+.product {
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-img {
+    width: 250px;
+    height: 370px;
+    margin-bottom: 20px;
+
+}
+
+.product h3 {
+    font-size: 20px;
+    color: black;
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.product p, .precio {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 15px;
+    
+}
+
+.precio{
+    font-weight: 800;
+}
+
+
+.icons {
+    padding: 50px 0 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-1 {
+    flex-basis: calc(45.3%- 30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: rgb(239, 239, 239);
+
+}
+
+.icon-txt h3{
+    font-size: 20px;
+    color: black;
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.icon-txt p {
+    font-size: 16px;
+    color: black;
+}
+
+
+.blog.blog-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .blog-title h4 {
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  h4 {
+    font-size: 50px;
+    color: black;
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+  .blog-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    }
+   
+.blog-1{
+    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.blog-1 img {
+    width: 300px;
+    max-width: 300px;
+    height: 500px;
+    margin-bottom: 20px;
+  }
+
+
+
+.blog-1 h3{
+    font-size: 20px;
+    color: black;
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    align-items: center;
+
+}
+
+.blog-1 p{
+    text-align: justify;
+    line-height: 1.4;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform: lowercase;
+}
+
+.blog-container{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+
+}
+
+.footer{
+    padding: 50px 0;    
+    background-color: #666;
+
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.link h3{
+    font-size: 18px;
+    color: black;
+    font-family: 'oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
+
+.link a{
+    font-size: 16px;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* espacio entre iconos */
+    list-style: none; /* quita los puntos de la lista */
+    padding: 0;
+    color: #333; /* color de los iconos */
+    font-size: 24px; /* tamaño de los iconos */
+    transition: color 0.3s ease; /* transición suave al hacer hover */
+
+}
+
+.social-links li {
+    margin: 10px 0;
+}
+
+.social-link i {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+/* Colores específicos para cada red social */
+.fa-instagram:hover { color: #E1306C; }
+.fa-whatsapp:hover { color: #25D366; }
+.fa-tiktok:hover { color: #000000; }
+.fa-facebook:hover { color: #1877F2; }
+
+/* Opcional: efecto hover */
+.social-link:hover {
+    color: #666; /* color al pasar el mouse por encima */
+}
+
+
+.logo img {
+    max-width: 80px;
+  height: auto;
+}
+
+
+
+
